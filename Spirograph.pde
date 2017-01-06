@@ -82,14 +82,9 @@ void draw() {
   
   
   
-  //if(count<frames/2){
-  //  stroke(max(255-6*ang1,0), min(6*ang1,255), 255);
-  //} else{
-  //  stroke(max(255-3*ang1,0), min(3*ang1,255), 255);
-  //}
+ 
   
   stroke(spiro);
-  //float str = min(1+ang1/10,4);
   strokeWeight(3);
   curve(ctr1x, ctr1y, prevPx, prevPy, Px, Py, ctr2x, ctr2y);
   
