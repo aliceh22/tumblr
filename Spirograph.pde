@@ -25,7 +25,7 @@ String name = "spiro19.png";
 
 
 void setup() {
-  size(400, 400, P3D);
+  size(400, 400, P3D); //window size -> increase for R>200
   ratio=R/r;
   rm= R-r;
   angle1 = 0;
