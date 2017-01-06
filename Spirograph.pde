@@ -44,7 +44,7 @@ void setup() {
   ctr2x=Px;
   ctr2y=Py;
   
-  
+ 
   ang1 = radians(angle1);
   ang2 = radians(angle2);
   
