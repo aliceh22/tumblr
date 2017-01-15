@@ -1,10 +1,8 @@
 
 PImage img;
-String imgFileName = "wall";
+String imgFileName = "image";
 String fileType = "jpg";
-String newName = "_glitched2.png";
-
-color randomColor = color(random(255), random(255), random(255), 255);
+String newName = "_glitched.png";
 
 boolean glitchFinished = false;
 boolean fileSaved = false;
@@ -66,9 +64,10 @@ void draw(){
        int xx = startPointsX[count] + x;
          for(int y = 0; y<lengthY[count]; y++)
          {
-           int special = int(random(-10,10));
+          //shifting pixels in the chosen random locations by chosen random amount...with some noise
+           int noise = int(random(-10,10));
            if((xx + (startPointsY[count]+y)*img.width + displacement[count]) < img.height*img.width-special){
-              img.pixels[xx + special + (startPointsY[count]+y)*img.width] = img.pixels[xx + special + (startPointsY[count]+y)*img.width + displacement[count]];
+              img.pixels[xx + noise + (startPointsY[count]+y)*img.width] = img.pixels[xx + noise + (startPointsY[count]+y)*img.width + displacement[count]];
            }
          }
      }
@@ -81,7 +80,6 @@ void draw(){
  }
 
 
- 
   
 }
 
