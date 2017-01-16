@@ -67,7 +67,7 @@ void draw(){
          {
           //shifting pixels in the chosen random locations by chosen random amount...with some noise
            int noise = int(random(-10,10));
-           if((xx + (startPointsY[count]+y)*img.width + displacement[count]) < img.height*img.width-special){
+           if((xx + (startPointsY[count]+y)*img.width + displacement[count]) < img.height*img.width-noise){
               img.pixels[xx + noise + (startPointsY[count]+y)*img.width] = img.pixels[xx + noise + (startPointsY[count]+y)*img.width + displacement[count]];
            }
          }
